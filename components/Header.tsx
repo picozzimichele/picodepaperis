@@ -32,9 +32,12 @@ export default function Header() {
                 <div className="border-b border-black rotate-90 w-20 bg-green-200 mt-12"></div>
             </div>
             <div className="flex flex-col gap-6 absolute bottom-10 items-center justify-center w-10 right-8">
-                <p className="rotate-90 text-xs hover:cursor-pointer hover:text-[#38a3a5] transition ease-in-out delay-150 hover:-translate-y-1 duration-300">
+                <a
+                    href="mailto:michele.g.picozzi@gmail.com"
+                    className="font-rigidSquare rotate-90 text-xs hover:cursor-pointer hover:text-[#38a3a5] transition ease-in-out delay-150 hover:-translate-y-1 duration-300"
+                >
                     michele.g.picozzi@gmail.com
-                </p>
+                </a>
                 <div className="border-b border-black rotate-90 w-20 bg-green-200 mt-[120px]"></div>
             </div>
         </>
