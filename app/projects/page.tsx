@@ -17,6 +17,33 @@ const projects = [
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
         image: "/images/imageTest.webp",
+        stack: ["React", "NextJS", "Tailwind", "Solidity"],
+        gitHubLink: "test",
+    },
+    {
+        title: "Project 1",
+        projectWebsite: "https://www.google.com",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
+        image: "/images/imageTest.webp",
+        stack: ["React", "NextJS", "TailwindCSS"],
+        gitHubLink: "test",
+    },
+    {
+        title: "Project 1",
+        projectWebsite: "https://www.google.com",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
+        image: "/images/imageTest.webp",
+        stack: ["React", "NextJS", "TailwindCSS"],
+        gitHubLink: "test",
+    },
+    {
+        title: "Project 1",
+        projectWebsite: "https://www.google.com",
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
+        image: "/images/imageTest.webp",
         stack: ["React", "NextJS", "TailwindCSS"],
         gitHubLink: "test",
     },
@@ -33,9 +60,9 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className="w-full mx-auto bg-green-200 py-10">
-            <div className="flex w-full font-figtree">I like to build, break and try new things</div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="w-full mx-auto py-10">
+            <div className="flex w-full font-figtree text-xl font-bold">I like to build, break and try new things</div>
+            <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={index}
