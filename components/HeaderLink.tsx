@@ -8,7 +8,7 @@ export default function HeaderLink({ title, href }: { title: string; href: strin
     const pathname = usePathname();
     const isActive = pathname === href;
     return (
-        <Link className={`hover:text-[#38a3a5] ${isActive ? "text-[#38a3a5]" : ""}`} href={href}>
+        <Link className={`font-rigidSquare text-xs hover:text-[#38a3a5] ${isActive ? "text-[#38a3a5]" : ""}`} href={href}>
             {title}
         </Link>
     );

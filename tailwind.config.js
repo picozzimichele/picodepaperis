@@ -10,8 +10,9 @@ module.exports = {
             },
         },
         fontFamily: {
-            inter: ["Inter", "sans-serif"],
+            inter: ["sans-serif", "Inter"],
             rigidSquare: ["RigidSquare"],
+            figtree: ["var(--font-figtree)"],
         },
     },
     plugins: [],
