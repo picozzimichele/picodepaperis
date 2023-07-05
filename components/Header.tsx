@@ -26,12 +26,12 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <div className="hidden sm:flex flex-col gap-6 absolute bottom-10 items-center justify-center w-10 lg:left-8 left-2">
+            <div className="hidden sm:flex fixed flex-col gap-6 bottom-10 items-center justify-center w-10 lg:left-8 left-2">
                 <SocialLink svg={<GithubSvg />} link={"https://github.com/picozzimichele"} />
                 <SocialLink svg={<LinkedinSvg />} link={"https://www.linkedin.com/in/picozzimichele/"} />
                 <div className="border-b border-black rotate-90 w-20 bg-green-200 mt-12"></div>
             </div>
-            <div className="hidden sm:flex flex-col gap-6 absolute bottom-10 items-center justify-center w-10 lg:right-8 right-2">
+            <div className="hidden sm:flex flex-col gap-6 fixed bottom-10 items-center justify-center w-10 lg:right-8 right-2">
                 <a
                     href="mailto:michele.g.picozzi@gmail.com"
                     className="font-rigidSquare rotate-90 text-xs hover:cursor-pointer hover:text-[#38a3a5] transition ease-in-out delay-150 hover:-translate-y-1 duration-300"
