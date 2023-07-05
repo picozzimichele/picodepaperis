@@ -28,7 +28,7 @@ export default function ProjectCard({
                 href={projectWebsite}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex-1 aspect-[842/506] p-3 rounded-xl bg-gray-100 relative overflow-hidden hover:cursor-pointer"
+                className="group aspect-[842/506] p-3 rounded-xl bg-gray-100 relative overflow-hidden hover:cursor-pointer"
             >
                 <div className="flex flex-col w-full h-full justify-between relative z-10">
                     {/* Title and Icon */}
@@ -43,7 +43,12 @@ export default function ProjectCard({
                         <p className="text-xs font-figtree">{description}</p>
                     </div>
                 </div>
-                <Image className="group-hover:scale-105 transition ease-in-out delay-100 duration-[1s]" src={image} fill={true} alt="Project Screenshot" />
+                <Image
+                    className="object-cover group-hover:scale-105 transition ease-in-out delay-100 duration-[1s]"
+                    src={image}
+                    fill={true}
+                    alt="Project Screenshot"
+                />
             </a>
             {/* stack used */}
             <div className="flex flex-wrap justify-center gap-3">

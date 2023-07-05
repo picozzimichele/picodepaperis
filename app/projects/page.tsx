@@ -17,7 +17,7 @@ const projects = [
         description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
         image: "/images/imageTest.webp",
-        stack: ["React", "NextJS", "Tailwind", "Solidity"],
+        stack: ["React", "NextJS", "Tailwind", "Solidity", "Hardhat", "EthersJS"],
         gitHubLink: "test",
     },
     {
