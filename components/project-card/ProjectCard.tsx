@@ -6,44 +6,49 @@ import StackTag from "./StackTag";
 import GithubRepoLink from "./GithubRepoLink";
 import Image from "next/image";
 
-export default function ProjectCard() {
+export default function ProjectCard({
+    gitHubLink,
+    projectWebsite,
+    stack,
+    title,
+    description,
+    image,
+}: {
+    gitHubLink: string;
+    projectWebsite: string;
+    stack: string[];
+    title: string;
+    description: string;
+    image: string;
+}) {
     return (
         <div className="flex flex-col gap-5">
             {/* card frame */}
-            <div className="group flex-1 aspect-[842/506] p-3 rounded-xl bg-green-400 relative overflow-hidden hover:cursor-pointer">
+            <a
+                href={projectWebsite}
+                target="_blank"
+                rel="noreferrer"
+                className="group flex-1 aspect-[842/506] p-3 rounded-xl bg-green-400 relative overflow-hidden hover:cursor-pointer"
+            >
                 <div className="flex flex-col w-full h-full justify-between relative z-10">
                     {/* Title and Icon */}
                     <div className="flex w-full justify-between">
-                        <p className="font-figtree">Title</p>
+                        <p className="font-figtree">{title}</p>
                         <div className="bg-white rounded-full aspect-square shrink-0 h-5 flex items-center justify-center">
                             <Arrow45Degree />
                         </div>
                     </div>
                     {/* Card Description on Hover */}
-                    <div className="flex opacity-0 group-hover:opacity-100 w-full transition ease-in-out delay-150 duration-[2s]">
-                        <p className="text-xs font-figtree">
-                            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The
-                            point of using Lorem Ipsum is that it has a more-or-less normal
-                        </p>
+                    <div className="flex opacity-0 group-hover:opacity-100 w-full transition ease-in-out delay-100 duration-[1s]">
+                        <p className="text-xs font-figtree">{description}</p>
                     </div>
                 </div>
-                <Image
-                    className="group-hover:scale-105 transition ease-in-out delay-150 duration-[2s]"
-                    src="/images/imageTest.webp"
-                    fill={true}
-                    alt="Project Screenshot"
-                />
-            </div>
+                <Image className="group-hover:scale-105 transition ease-in-out delay-100 duration-[1s]" src={image} fill={true} alt="Project Screenshot" />
+            </a>
             {/* stack used */}
             <div className="flex flex-wrap justify-center gap-3">
-                <GithubRepoLink />
-                <StackTag />
-                <StackTag />
-                <StackTag />
-                <StackTag />
-                <StackTag />
-                <StackTag />
-                <StackTag />
+                {gitHubLink && <GithubRepoLink projectLink={gitHubLink} />}
+                {stack && stack.map((stackName, index) => <StackTag key={index} name={stackName} />)}
             </div>
         </div>
     );
