@@ -1,9 +1,6 @@
+import TanukiLogoSvg from "@/public/svg/TanukiLogoSvg";
 import React from "react";
 
 export default function Experience() {
-    return (
-        <div>
-            <p>Experience</p>
-        </div>
-    );
+    return <div>Experience</div>;
 }

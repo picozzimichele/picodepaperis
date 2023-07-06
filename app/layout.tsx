@@ -1,4 +1,4 @@
-import Header from "@/components/Header";
+import Header from "@/components/header/Header";
 import "./globals.css";
 import "./_fonts.css";
 import { Figtree } from "next/font/google";

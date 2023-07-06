@@ -5,3 +5,34 @@
 body {
     @apply bg-[#22577A];
 }
+
+@layer components {
+    .svgpath {
+        stroke-dasharray: 200;
+        stroke-dashoffset: 200;
+        animation: dash 30s forwards;
+        height: 10px;
+        width: 10px;
+    }
+
+    .text {
+        color: yellow;
+    }
+
+    .svgg {
+        animation: fill-in 2s 5s forwards;
+        fill-opacity: 0;
+    }
+
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes fill-in {
+        to {
+            fill-opacity: 1;
+        }
+    }
+}

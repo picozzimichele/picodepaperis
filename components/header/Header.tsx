@@ -1,9 +1,10 @@
 import React from "react";
-import LinkedinSvg from "../public/svg/LinkedinSvg";
-import GithubSvg from "../public/svg/GithubSvg";
+import LinkedinSvg from "../../public/svg/LinkedinSvg";
+import GithubSvg from "../../public/svg/GithubSvg";
 import Link from "next/link";
-import HeaderLink from "./HeaderLink";
 import SocialLink from "./SocialLink";
+import TanukiLogoSvg from "@/public/svg/TanukiLogoSvg";
+import HeaderLink from "./HeaderLink";
 
 export default function Header() {
     return (
@@ -12,7 +13,9 @@ export default function Header() {
                 <div className="flex w-[95%] mx-auto mt-4 justify-between">
                     <div className="flex items-center gap-2 relative">
                         <Link className="hover:text-[#38a3a5] flex items-center gap-1" href={"/"}>
-                            <div className="flex rounded-full bg-gray-400 h-8 w-8 items-center justify-center">L</div>
+                            <div className="flex rounded-full h-8 w-8 items-center justify-center scale-[5]">
+                                <TanukiLogoSvg />
+                            </div>
                             <p>PICOZZIMICHELE</p>
                         </Link>
                     </div>
