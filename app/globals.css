@@ -36,6 +36,14 @@ body {
         animation: 35s slide infinite linear;
     }
 
+    .itemslidedown {
+        animation: 35s slidedown infinite linear;
+    }
+
+    .delay-2 {
+        animation-delay: 2s;
+    }
+
     .animationpaused {
         animation-play-state: paused;
     }
@@ -46,6 +54,15 @@ body {
         }
         to {
             transform: translateY(-100%);
+        }
+    }
+
+    @keyframes slidedown {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
         }
     }
 }
