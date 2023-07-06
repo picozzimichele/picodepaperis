@@ -155,7 +155,7 @@ export default function Photography() {
     const slicedPictures6 = picList.slice(25, 30);
 
     return (
-        <div className="flex w-full bg-green-200 md:h-screen md:overflow-hidden">
+        <div className="flex w-full md:h-screen md:overflow-hidden">
             <div className="flex flex-col w-full">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                     <PhotoColumn color="bg-gray-200" pictureList={slicedPictures1} delay={true} />

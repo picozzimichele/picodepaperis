@@ -11,7 +11,7 @@ export default function PhotoColumn({ color, pictureList, delay }: { color: stri
             </div>
             <div className={`md:flex hidden flex-col gap-4 md:itemslide ${delay ? "md:delay-2" : ""}`}>
                 {pictureList.map((picture: any) => (
-                    <PhotoCard color={color} key={picture.name} image={picture.url} />
+                    <PhotoCard color={color} key={picture.name} image={picture.url} lazy={true} />
                 ))}
             </div>
         </div>
