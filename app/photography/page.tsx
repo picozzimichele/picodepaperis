@@ -1,3 +1,5 @@
+"use client";
+
 import PhotoColumn from "@/components/photography-card/PhotoColumn";
 import React from "react";
 
@@ -21,7 +23,7 @@ export default function Photography() {
         },
         {
             url: "https://i.imgur.com/mrVbtiR.jpg",
-            name: "https://i.imgur.com/d37oN0Y.jpg",
+            name: "Golden Pavillion",
         },
         {
             url: "https://i.imgur.com/ignqnzO.jpg",
@@ -36,12 +38,8 @@ export default function Photography() {
             name: "Korea Palace",
         },
         {
-            url: "https://i.imgur.com/xzzrIrg.jpg",
-            name: "Sumo singol Full",
-        },
-        {
-            url: "https://i.imgur.com/Ap6AmYd.jpg",
-            name: "Sumo practice",
+            url: "https://i.imgur.com/4WeKxcM.jpg",
+            name: "Festival one Full",
         },
         {
             url: "https://i.imgur.com/PtvjDHJ.jpg",
@@ -54,6 +52,10 @@ export default function Photography() {
         {
             url: "https://i.imgur.com/l2YPNbz.jpg",
             name: "Kyoto Temple inside Full",
+        },
+        {
+            url: "https://i.imgur.com/Ap6AmYd.jpg",
+            name: "Sumo practice",
         },
         {
             url: "https://i.imgur.com/JMvW3T7.jpg",
@@ -70,6 +72,10 @@ export default function Photography() {
         {
             url: "https://i.imgur.com/AeEVv1v.jpg",
             name: "Old Man metro",
+        },
+        {
+            url: "https://i.imgur.com/xzzrIrg.jpg",
+            name: "Sumo singol Full",
         },
         {
             url: "https://i.imgur.com/NVlExLf.jpg",
@@ -108,10 +114,6 @@ export default function Photography() {
             name: "Fishing Sant diego",
         },
         {
-            url: "https://i.imgur.com/4WeKxcM.jpg",
-            name: "Festival one Full",
-        },
-        {
             url: "https://i.imgur.com/ikhd4RP.jpg",
             name: "St Diego city",
         },
@@ -145,12 +147,12 @@ export default function Photography() {
         },
     ];
 
-    const slicedPictures1 = picList.slice(0, 4);
-    const slicedPictures2 = picList.slice(4, 8);
-    const slicedPictures3 = picList.slice(8, 12);
-    const slicedPictures4 = picList.slice(12, 16);
-    const slicedPictures5 = picList.slice(16, 20);
-    const slicedPictures6 = picList.slice(20, 24);
+    const slicedPictures1 = picList.slice(0, 5);
+    const slicedPictures2 = picList.slice(5, 10);
+    const slicedPictures3 = picList.slice(10, 15);
+    const slicedPictures4 = picList.slice(15, 20);
+    const slicedPictures5 = picList.slice(20, 25);
+    const slicedPictures6 = picList.slice(25, 30);
 
     return (
         <div className="flex w-full bg-green-200 md:h-screen md:overflow-hidden">
