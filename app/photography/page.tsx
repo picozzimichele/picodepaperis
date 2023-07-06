@@ -156,11 +156,11 @@ export default function Photography() {
         <div className="flex w-full bg-green-200 md:h-screen md:overflow-hidden">
             <div className="flex flex-col w-full">
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    <PhotoColumn color="bg-gray-200" pictureList={slicedPictures1} />
-                    <PhotoColumn color="bg-gray-200" pictureList={slicedPictures2} delay={true} />
-                    <PhotoColumn color="bg-gray-200" pictureList={slicedPictures3} />
-                    <PhotoColumn color="bg-gray-200" pictureList={slicedPictures4} delay={true} />
-                    <PhotoColumn color="bg-gray-200" pictureList={slicedPictures5} />
+                    <PhotoColumn color="bg-gray-200" pictureList={slicedPictures1} delay={true} />
+                    <PhotoColumn color="bg-gray-200" pictureList={slicedPictures2} />
+                    <PhotoColumn color="bg-gray-200" pictureList={slicedPictures3} delay={true} />
+                    <PhotoColumn color="bg-gray-200" pictureList={slicedPictures4} />
+                    <PhotoColumn color="bg-gray-200" pictureList={slicedPictures5} delay={true} />
                     <div className="md:hidden">
                         <PhotoColumn color="bg-gray-200" pictureList={slicedPictures6} />
                     </div>

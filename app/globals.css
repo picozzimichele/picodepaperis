@@ -41,7 +41,7 @@ body {
     }
 
     .delay-2 {
-        animation-delay: 2s;
+        animation-delay: -2s;
     }
 
     .animationpaused {
