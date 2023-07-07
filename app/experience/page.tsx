@@ -17,15 +17,18 @@ export default function Experience() {
                 "Implemented a custom ERC-721 token using OpenZeppelin.",
                 "Developed a custom ERC-20 token using OpenZeppelin.",
             ],
+            website: "https://www.opgames.org/",
         },
         {
             name: "CoworkSurf",
+            title: "Co-founder and Full Stack Developer",
             responsibilities: [
                 "Developed a web3 application using React, Next.js, and TypeScript.",
                 "Integrated the application with the Ethereum blockchain using Web3.js.",
                 "Implemented a custom ERC-721 token using OpenZeppelin.",
                 "Developed a custom ERC-20 token using OpenZeppelin.",
             ],
+            website: "https://www.coworksurf.com/",
         },
         {
             name: "Microsoft Japan",
@@ -47,21 +50,28 @@ export default function Experience() {
     const text =
         "Developed a web3 application using React, Next.js, and TypeScript. Integrated the application with the Ethereum blockchain using Web3.js. Implemented a custom ERC-721 token using OpenZeppelin. Developed a custom ERC-20 token using OpenZeppelin.";
 
-    const [work, setWork] = useState(companyList[0]);
+    const [selectedCompany, setSelectedCompany] = useState(companyList[0]);
     const [companyName, setCompanyName] = useState(companyList[0].name);
     return (
         <div className="flex w-full items-center mx-auto justify-center">
             <div className="bg-green-400 w-full flex max-w-3xl gap-3">
                 <div className="flex flex-col bg-green-700">
                     {companyList.map((company, index) => (
-                        <CompanySelector key={index} onClick={() => setCompanyName(company.name)} companyName={companyName} title={company.name} />
+                        <CompanySelector
+                            key={index}
+                            onClick={() => {
+                                setCompanyName(company.name);
+                            }}
+                            companyName={companyName}
+                            title={company.name}
+                        />
                     ))}
                 </div>
                 <div className="flex-1 bg-green-800">
                     <div className="flex gap-1">
-                        <p className="font-figtree font-semibold">Full Stack Web3 Developer</p>
-                        <a className="font-figtree font-semibold text-gray-100" href={"https://www.google.com/"} target="_blank" rel="noreferrer">
-                            <span>@</span> <span className="hover:underline">OP Games</span>
+                        <p className="font-figtree font-semibold">{selectedCompany?.title}</p>
+                        <a className="font-figtree font-semibold text-gray-100" href={selectedCompany?.website} target="_blank" rel="noreferrer">
+                            <span>@</span> <span className="hover:underline">{companyName}</span>
                         </a>
                     </div>
                     <p className="text-xs">December 2021 - present</p>
@@ -72,7 +82,7 @@ export default function Experience() {
                                 <BulletPoint key={index} text={responsibility} />
                             ))}
                     </div>
-                    <p>{work.name}</p>
+                    <p>{selectedCompany.name}</p>
                 </div>
             </div>
         </div>
