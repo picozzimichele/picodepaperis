@@ -20,6 +20,12 @@ export default function Experience() {
         },
         {
             name: "CoworkSurf",
+            responsibilities: [
+                "Developed a web3 application using React, Next.js, and TypeScript.",
+                "Integrated the application with the Ethereum blockchain using Web3.js.",
+                "Implemented a custom ERC-721 token using OpenZeppelin.",
+                "Developed a custom ERC-20 token using OpenZeppelin.",
+            ],
         },
         {
             name: "Microsoft Japan",
@@ -60,10 +66,11 @@ export default function Experience() {
                     </div>
                     <p className="text-xs">December 2021 - present</p>
                     <div className="flex flex-col w-full bg-red-400 gap-4">
-                        <BulletPoint text={text} />
-                        <BulletPoint text={text} />
-                        <BulletPoint text={text} />
-                        <BulletPoint text={text} />
+                        {companyList
+                            .filter((company) => company.name === companyName)[0]
+                            .responsibilities?.map((responsibility, index) => (
+                                <BulletPoint key={index} text={responsibility} />
+                            ))}
                     </div>
                     <p>{work.name}</p>
                 </div>
