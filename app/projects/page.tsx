@@ -1,3 +1,4 @@
+import Layout from "@/components/layout/Layout";
 import ProjectCard from "@/components/project-card/ProjectCard";
 import React from "react";
 
@@ -60,24 +61,26 @@ const projects = [
 
 export default function Projects() {
     return (
-        <div className="w-full mx-auto py-10">
-            <div className="flex flex-col w-full">
-                <p className="font-figtree text-xl font-bold">I like to build, break and try new things</p>
-                <p className="font-figtree text-xs">Check some of my work below</p>
+        <Layout>
+            <div className="w-full mx-auto py-5">
+                <div className="flex flex-col w-full">
+                    <p className="font-figtree text-xl font-bold">I like to build, break and try new things</p>
+                    <p className="font-figtree text-xs">Check some of my work below</p>
+                </div>
+                <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+                    {projects.map((project, index) => (
+                        <ProjectCard
+                            key={index}
+                            title={project.title}
+                            projectWebsite={project.projectWebsite}
+                            description={project.description}
+                            image={project.image}
+                            stack={project.stack}
+                            gitHubLink={project.gitHubLink}
+                        />
+                    ))}
+                </div>
             </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-                {projects.map((project, index) => (
-                    <ProjectCard
-                        key={index}
-                        title={project.title}
-                        projectWebsite={project.projectWebsite}
-                        description={project.description}
-                        image={project.image}
-                        stack={project.stack}
-                        gitHubLink={project.gitHubLink}
-                    />
-                ))}
-            </div>
-        </div>
+        </Layout>
     );
 }

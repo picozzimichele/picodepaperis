@@ -3,13 +3,13 @@ import LinkedinSvg from "../../public/svg/LinkedinSvg";
 import GithubSvg from "../../public/svg/GithubSvg";
 import Link from "next/link";
 import SocialLink from "./SocialLink";
-import TanukiLogoSvg from "@/public/svg/TanukiLogoSvg";
 import HeaderLink from "./HeaderLink";
+import ToggleDark from "../ToggleDark";
 
 export default function Header() {
     return (
         <>
-            <div className="flex w-full h-14 bg-green-100 dark:bg-slate-500">
+            <div className="flex w-full h-14 dark:bg-slate-500">
                 <div className="flex w-[95%] mx-auto mt-4 justify-between">
                     <div className="flex items-center gap-2 relative">
                         <Link className="hover:text-[#38a3a5] flex items-center gap-1" href={"/"}>
@@ -25,7 +25,6 @@ export default function Header() {
                                     </g>
                                 </svg>
                             </div>
-                            <p>PICOZZIMICHELE</p>
                         </Link>
                     </div>
                     <div className="flex items-center gap-4">
@@ -34,6 +33,7 @@ export default function Header() {
                             <HeaderLink title={"Projects"} href={"/projects"} />
                             <HeaderLink title={"Photography"} href={"/photography"} />
                             <HeaderLink title={"Contact"} href={"/contact"} />
+                            <ToggleDark />
                         </div>
                     </div>
                 </div>

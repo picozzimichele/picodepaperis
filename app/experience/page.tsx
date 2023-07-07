@@ -2,6 +2,7 @@
 
 import BulletPoint from "@/components/experience/BulletPoint";
 import CompanySelector from "@/components/experience/CompanySelector";
+import Layout from "@/components/layout/Layout";
 import { useState, useEffect, useCallback, useMemo } from "react";
 
 export default function Experience() {
@@ -66,37 +67,39 @@ export default function Experience() {
         setSelectedCompany(filteredCompany(companyName));
     }, [companyName, filteredCompany]);
     return (
-        <div className="flex w-full items-center mx-auto justify-center">
-            <div className="bg-green-400 w-full flex max-w-3xl gap-3">
-                <div className="flex flex-col bg-green-700">
-                    {companyList.map((company, index) => (
-                        <CompanySelector
-                            key={index}
-                            onClick={() => {
-                                setCompanyName(company.name);
-                            }}
-                            companyName={companyName}
-                            title={company.name}
-                        />
-                    ))}
-                </div>
-                <div className="flex-1 bg-green-800">
-                    <div className="flex gap-1">
-                        <p className="font-figtree font-semibold">{selectedCompany?.title}</p>
-                        <a className="font-figtree font-semibold text-gray-100" href={selectedCompany?.website} target="_blank" rel="noreferrer">
-                            <span>@</span> <span className="hover:underline">{companyName}</span>
-                        </a>
+        <Layout>
+            <div className="flex w-full items-center mx-auto justify-center">
+                <div className="bg-green-400 w-full flex max-w-3xl gap-3">
+                    <div className="flex flex-col bg-green-700">
+                        {companyList.map((company, index) => (
+                            <CompanySelector
+                                key={index}
+                                onClick={() => {
+                                    setCompanyName(company.name);
+                                }}
+                                companyName={companyName}
+                                title={company.name}
+                            />
+                        ))}
                     </div>
-                    <p className="text-xs">December 2021 - present</p>
-                    <div className="flex flex-col w-full bg-red-400 gap-4">
-                        {companyList
-                            .filter((company) => company.name === companyName)[0]
-                            .responsibilities?.map((responsibility, index) => (
-                                <BulletPoint key={index} text={responsibility} />
-                            ))}
+                    <div className="flex-1 bg-green-800">
+                        <div className="flex gap-1">
+                            <p className="font-figtree font-semibold">{selectedCompany?.title}</p>
+                            <a className="font-figtree font-semibold text-gray-100" href={selectedCompany?.website} target="_blank" rel="noreferrer">
+                                <span>@</span> <span className="hover:underline">{companyName}</span>
+                            </a>
+                        </div>
+                        <p className="text-xs">December 2021 - present</p>
+                        <div className="flex flex-col w-full bg-red-400 gap-4">
+                            {companyList
+                                .filter((company) => company.name === companyName)[0]
+                                .responsibilities?.map((responsibility, index) => (
+                                    <BulletPoint key={index} text={responsibility} />
+                                ))}
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </Layout>
     );
 }

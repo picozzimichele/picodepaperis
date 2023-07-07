@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply bg-[#22577A];
-}
-
 @layer components {
     .svgpath {
         stroke-dasharray: 200;
