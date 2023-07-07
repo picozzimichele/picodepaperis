@@ -8,6 +8,7 @@ const useLocalStorage = (key: string, initialValue: string) => {
     const [storedValue, setStoredValue] = useState(() => {
         try {
             // Get from local storage by key
+            if (typeof window === "undefined") return;
             const item = window.localStorage.getItem(key);
             // Parse stored json or if none return initialValue
             return item ? JSON.parse(item) : initialValue;
