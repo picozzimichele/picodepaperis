@@ -5,6 +5,7 @@ import Link from "next/link";
 import SocialLink from "./SocialLink";
 import HeaderLink from "./HeaderLink";
 import ToggleDark from "../ToggleDark";
+import HackerTitle from "../title/HackerTitle";
 
 export default function Header() {
     return (
@@ -25,6 +26,7 @@ export default function Header() {
                                     </g>
                                 </svg>
                             </div>
+                            <HackerTitle />
                         </Link>
                     </div>
                     <div className="flex items-center gap-4">

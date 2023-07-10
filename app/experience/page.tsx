@@ -122,7 +122,12 @@ export default function Experience() {
                     <div className="flex-1">
                         <div className="flex gap-1">
                             <p className="font-figtree font-semibold dark:text-headerDark">{selectedCompany?.title}</p>
-                            <a className="font-figtree font-semibold dark:text-lightGreen" href={selectedCompany?.website} target="_blank" rel="noreferrer">
+                            <a
+                                className="font-figtree font-semibold dark:text-lightGreen text-lightGreen"
+                                href={selectedCompany?.website}
+                                target="_blank"
+                                rel="noreferrer"
+                            >
                                 <span>@</span> <span className="hover:underline">{companyName}</span>
                             </a>
                         </div>
