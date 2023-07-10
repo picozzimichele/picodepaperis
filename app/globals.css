@@ -65,4 +65,8 @@ body {
             transform: translateY(0);
         }
     }
+
+    .translate {
+        translate: -50% -50%;
+    }
 }

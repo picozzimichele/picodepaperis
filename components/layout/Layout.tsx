@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../header/Header";
+import BlobCircle from "../blob/BlobCircle";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
