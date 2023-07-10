@@ -12,7 +12,7 @@ export default function Header() {
             <div className="flex w-full h-14">
                 <div className="flex w-[95%] h-full mx-auto justify-between items-center">
                     <div className="flex items-center gap-2 relative">
-                        <Link className="hover:text-[#38a3a5] flex items-center gap-1" href={"/"}>
+                        <Link className="hover:text-lightGreen dark:text-headerDark dark:hover:text-lightGreen flex items-center gap-1" href={"/"}>
                             <div className="flex rounded-full h-8 w-8 items-center justify-center">
                                 <svg className="svgpath" viewBox="0 0 14 11">
                                     <g className="svgg" stroke="currentColor" strokeWidth="0.05" fill="currentColor" fillRule="nonzero">

@@ -8,7 +8,7 @@ export default function ToggleDark() {
     return (
         <button
             onClick={() => setColorMode(colorMode === "light" ? "dark" : "light")}
-            className="hover:text-[#38a3a5] w-10 flex items-center justify-center rounded-full p-1"
+            className="hover:text-lightGreen dark:text-headerDark dark:hover:text-lightGreen w-10 flex items-center justify-center rounded-full p-1"
         >
             {colorMode === "light" ? <MoonSvg /> : <SunSvg />}
         </button>
