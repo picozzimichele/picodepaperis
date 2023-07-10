@@ -33,11 +33,11 @@ body {
     }
 
     .itemslide {
-        animation: 35s slide infinite linear;
+        animation: 55s slide infinite linear;
     }
 
     .itemslidedown {
-        animation: 35s slidedown infinite linear;
+        animation: 55s slidedown infinite linear;
     }
 
     .delay-2 {

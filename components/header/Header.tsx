@@ -6,6 +6,10 @@ import SocialLink from "./SocialLink";
 import HeaderLink from "./HeaderLink";
 import HackerTitle from "../title/HackerTitle";
 import ToggleDark from "../dark-mode/ToggleDark";
+import ExperienceSvg from "@/public/svg/ExperienceSvg";
+import ContactSvg from "@/public/svg/ContactSvg";
+import PhotosSvg from "@/public/svg/PhotosSvg";
+import ProjectsSvg from "@/public/svg/ProjectsSvg";
 
 export default function Header() {
     return (
@@ -29,7 +33,8 @@ export default function Header() {
                             <HackerTitle />
                         </Link>
                     </div>
-                    <div className="flex items-center gap-4">
+                    {/* Desktop NavBar */}
+                    <div className="hidden sm:flex items-center gap-4">
                         <div className="flex items-center gap-10">
                             <HeaderLink title={"Experience"} href={"/experience"} />
                             <HeaderLink title={"Projects"} href={"/projects"} />
@@ -53,6 +58,14 @@ export default function Header() {
                     michele.g.picozzi@gmail.com
                 </a>
                 <div className="border-b border-black dark:border-textDark rotate-90 w-20 bg-green-200 mt-[120px] transition ease-in-out delay-150 duration-300"></div>
+            </div>
+            {/* Mobile Navbar */}
+            <div className="sm:hidden flex items-center justify-evenly fixed bottom-0 h-14 w-full z-50">
+                <ToggleDark />
+                <HeaderLink title={"Experience"} href={"/experience"} svg={<ExperienceSvg />} />
+                <HeaderLink title={"Projects"} href={"/projects"} svg={<ProjectsSvg />} />
+                <HeaderLink title={"Photography"} href={"/photography"} svg={<PhotosSvg />} />
+                <HeaderLink title={"Contact"} href={"/contact"} svg={<ContactSvg />} />
             </div>
         </>
     );

@@ -9,6 +9,7 @@ module.exports = {
                 headerDark: "#CCD6F6",
                 textDark: "#8892AF",
                 bgHover: "#112240",
+                bgDark: "#0b192e",
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
