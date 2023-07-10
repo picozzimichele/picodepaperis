@@ -64,7 +64,7 @@ export default function Projects() {
         <Layout>
             <div className="w-full mx-auto py-5">
                 <div className="flex flex-col w-full">
-                    <p className="font-figtree text-xl font-bold">I like to build, break and try new things</p>
+                    <p className="font-figtree text-xl font-bold dark:text-headerDark">I like to build, break and try new things</p>
                     <p className="font-figtree text-xs">Check some of my work below</p>
                 </div>
                 <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">

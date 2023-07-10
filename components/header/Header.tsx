@@ -41,7 +41,7 @@ export default function Header() {
             <div className="hidden sm:flex fixed flex-col gap-6 bottom-10 items-center justify-center w-10 lg:left-8 left-2">
                 <SocialLink svg={<GithubSvg />} link={"https://github.com/picozzimichele"} />
                 <SocialLink svg={<LinkedinSvg />} link={"https://www.linkedin.com/in/picozzimichele/"} />
-                <div className="border-b border-black rotate-90 w-20 bg-green-200 mt-12"></div>
+                <div className="border-b border-black dark:border-textDark rotate-90 w-20 bg-green-200 mt-12 transition ease-in-out delay-150 duration-300"></div>
             </div>
             <div className="hidden sm:flex flex-col gap-6 fixed bottom-10 items-center justify-center w-10 lg:right-8 right-2">
                 <a
@@ -50,7 +50,7 @@ export default function Header() {
                 >
                     michele.g.picozzi@gmail.com
                 </a>
-                <div className="border-b border-black rotate-90 w-20 bg-green-200 mt-[120px]"></div>
+                <div className="border-b border-black dark:border-textDark rotate-90 w-20 bg-green-200 mt-[120px] transition ease-in-out delay-150 duration-300"></div>
             </div>
         </>
     );

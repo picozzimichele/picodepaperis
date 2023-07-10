@@ -5,8 +5,8 @@ export default function CompanySelector({ onClick, companyName, title }: { onCli
         <button
             onClick={onClick}
             className={`border-l text-xs text-left px-4 py-3 ease-in-out duration-[300ms] ${
-                companyName === title ? "text-red-500 border-l border-red-500 bg-gray-200" : "border-white"
-            } hover:text-red-500 hover:bg-gray-200 py-2`}
+                companyName === title ? "text-lightGreen border-l border-lightGreen bg-bgHover" : "border-white"
+            } hover:text-lightGreen hover:bg-bgHover py-2`}
         >
             {title}
         </button>
