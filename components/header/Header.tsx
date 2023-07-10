@@ -60,7 +60,7 @@ export default function Header() {
                 <div className="border-b border-black dark:border-textDark rotate-90 w-20 bg-green-200 mt-[120px] transition ease-in-out delay-150 duration-300"></div>
             </div>
             {/* Mobile Navbar */}
-            <div className="sm:hidden flex items-center justify-evenly fixed bottom-0 h-14 w-full z-50">
+            <div className="sm:hidden flex items-center justify-evenly fixed bottom-0 h-16 w-full z-50 dark:bg-bgDark bg-white">
                 <ToggleDark />
                 <HeaderLink title={"Experience"} href={"/experience"} svg={<ExperienceSvg />} />
                 <HeaderLink title={"Projects"} href={"/projects"} svg={<ProjectsSvg />} />
