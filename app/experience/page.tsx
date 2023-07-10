@@ -2,6 +2,7 @@
 
 import BulletPoint from "@/components/experience/BulletPoint";
 import CompanySelector from "@/components/experience/CompanySelector";
+import ResumeButton from "@/components/experience/ResumeButton";
 import Layout from "@/components/layout/Layout";
 import { useState, useEffect, useCallback, useMemo } from "react";
 
@@ -105,8 +106,10 @@ export default function Experience() {
     }, [companyName, filteredCompany]);
     return (
         <Layout>
-            <div className="flex w-full items-center mx-auto justify-center">
-                <div className="w-full flex max-w-3xl gap-3">
+            <div className="flex flex-col w-full items-center mx-auto max-w-3xl justify-center">
+                {/* Interactive Resume Section */}
+                <div className="w-full flex  gap-3">
+                    {/* Clicable Companies */}
                     <div className="flex flex-col">
                         {companyList.map((company, index) => (
                             <CompanySelector
@@ -128,7 +131,7 @@ export default function Experience() {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span>@</span> <span className="hover:underline">{companyName}</span>
+                                <span>@</span> <span className="hover:border-b hover:border-b-lightGreen pb-1">{companyName}</span>
                             </a>
                         </div>
                         <p className="text-xs">{selectedCompany?.date}</p>
@@ -140,6 +143,10 @@ export default function Experience() {
                                 ))}
                         </div>
                     </div>
+                </div>
+                {/* PDF Resume Button */}
+                <div className="flex w-full pt-8 items-start justify-start">
+                    <ResumeButton />
                 </div>
             </div>
         </Layout>

@@ -61,7 +61,6 @@ export default function Header() {
             </div>
             {/* Mobile Navbar */}
             <div className="sm:hidden flex items-center justify-evenly fixed bottom-0 h-16 w-full z-50 dark:bg-bgDark bg-white">
-                <ToggleDark />
                 <HeaderLink title={"Experience"} href={"/experience"} svg={<ExperienceSvg />} />
                 <HeaderLink title={"Projects"} href={"/projects"} svg={<ProjectsSvg />} />
                 <HeaderLink title={"Photography"} href={"/photography"} svg={<PhotosSvg />} />
