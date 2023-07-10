@@ -4,8 +4,8 @@ import GithubSvg from "../../public/svg/GithubSvg";
 import Link from "next/link";
 import SocialLink from "./SocialLink";
 import HeaderLink from "./HeaderLink";
-import ToggleDark from "../ToggleDark";
 import HackerTitle from "../title/HackerTitle";
+import ToggleDark from "../dark-mode/ToggleDark";
 
 export default function Header() {
     return (
