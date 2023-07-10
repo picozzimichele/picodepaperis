@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import useHover from "@/hooks/useHover";
 
 export default function HackerTitle() {
@@ -26,12 +26,12 @@ export default function HackerTitle() {
             if (iterations >= title.length) {
                 clearInterval(interval);
             }
-            iterations++;
+            iterations += 1;
         }, 50);
     }, [hovered]);
 
     return (
-        <div {...eventHandlers} className="w-40 bg-white">
+        <div {...eventHandlers} className="font-rigidSquare text-xs">
             {hovered ? newTitle : title}
         </div>
     );
