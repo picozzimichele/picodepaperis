@@ -6,6 +6,13 @@ export default function BlobCircle() {
 
     useEffect(() => {
         const handleMouseMove = (event: any) => {
+            const windowWidth = (window as any).width();
+            const windowHeight = (window as any).height();
+            const mouseXpercentage = Math.round((event.pageX / windowWidth) * 100);
+            const mouseYpercentage = Math.round((event.pageY / windowHeight) * 100);
+
+            console.log(mouseXpercentage, mouseYpercentage);
+
             setMousePos({ x: event.clientX, y: event.clientY });
         };
 

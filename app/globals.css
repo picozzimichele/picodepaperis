@@ -6,6 +6,12 @@ body {
     background-color: #0b192e;
 }
 
+@layer base {
+    :root {
+        --color-secondary: rgba(29, 78, 216, 0.15);
+    }
+}
+
 @layer components {
     .svgpath {
         stroke-dasharray: 200;
@@ -68,5 +74,18 @@ body {
 
     .translate {
         translate: -50% -50%;
+    }
+
+    .radial-gradient {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+
+        /*Fallback if gradeints don't work */
+        background: #9b59b6;
+        /*Linear gradient... */
+        background: radial-gradient(circle farthest-side at var(--x, 100px) var(--y, 100px), #3498db, #9b59b6);
     }
 }

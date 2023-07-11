@@ -134,7 +134,7 @@ export default function Experience() {
                                 <span>@</span> <span className="hover:border-b hover:border-b-lightGreen pb-1">{companyName}</span>
                             </a>
                         </div>
-                        <p className="text-xs">{selectedCompany?.date}</p>
+                        <p className="text-xs mt-1">{selectedCompany?.date}</p>
                         <div className="flex flex-col w-full gap-4 mt-4">
                             {companyList
                                 .filter((company) => company.name === companyName)[0]
