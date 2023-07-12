@@ -13,6 +13,16 @@ body {
 }
 
 @layer components {
+    .svgpathryno {
+        stroke-dasharray: 300;
+        stroke-dashoffset: 300;
+        animation: dash 15s forwards;
+    }
+    .svggryno {
+        animation: fill-in 10s 4s forwards;
+        fill-opacity: 0;
+    }
+
     .svgpath {
         stroke-dasharray: 200;
         stroke-dashoffset: 200;
