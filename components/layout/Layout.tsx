@@ -24,7 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <div
             ref={heroRef}
-            className="bg-white dark:bg-[#0b192e] dark:bg-[radial-gradient(circle_farthest-side_at_var(--x,_100px)_var(--y,_100px),_var(--color-secondary)_0%,_transparent_80%)] dark:text-textDark min-h-screen"
+            className="bg-white dark:bg-[#0b192e] dark:bg-[radial-gradient(circle_farthest-side_at_var(--x,_100px)_var(--y,_100px),_var(--color-secondary)_0%,_transparent_80%)] dark:text-textDark min-h-screen overflow-hidden relative"
         >
             <Header />
             <div className="flex sm:w-[85%] w-[90%] mx-auto">{children}</div>
