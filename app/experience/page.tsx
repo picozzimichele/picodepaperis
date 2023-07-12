@@ -3,10 +3,26 @@
 import BulletPoint from "@/components/experience/BulletPoint";
 import CompanySelector from "@/components/experience/CompanySelector";
 import ResumeButton from "@/components/experience/ResumeButton";
+import SkillSet from "@/components/experience/SkillSet";
 import Layout from "@/components/layout/Layout";
+import StackTagSkill from "@/components/project-card/StackTagSkill";
 import { useState, useEffect, useCallback, useMemo } from "react";
 
 export default function Experience() {
+    const skillSetList = [
+        {
+            title: "Programming Languages",
+            skills: ["Typescript", "Javascript", "Solidity", "Nodejs", "C#", "HTML", "CSS"],
+        },
+        {
+            title: "Libraries & Frameworks",
+            skills: ["React", "Nextjs", "React Native", "Threejs", "Babylonjs", "Tailwind", "Colyseus"],
+        },
+        {
+            title: "Tools & Platforms",
+            skills: ["Hardhat", "Foundry", "Unity", "Firebase", "Atlas", "Git", "GitHub", "Vercel"],
+        },
+    ];
     const companyList = useMemo(
         () => [
             {
@@ -147,6 +163,12 @@ export default function Experience() {
                 {/* PDF Resume Button */}
                 <div className="flex w-full pt-8 items-start justify-start">
                     <ResumeButton />
+                </div>
+                {/* Skills section */}
+                <div className="flex flex-col w-full pt-8 items-start justify-start gap-4">
+                    <SkillSet title={skillSetList[0].title} skills={skillSetList[0].skills} />
+                    <SkillSet title={skillSetList[1].title} skills={skillSetList[1].skills} />
+                    <SkillSet title={skillSetList[2].title} skills={skillSetList[2].skills} />
                 </div>
             </div>
         </Layout>

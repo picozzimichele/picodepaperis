@@ -1,4 +1,3 @@
-import GithubFullSvg from "@/public/svg/GithubFullSvg";
 import React from "react";
 
 export default function StackTag({ name }: { name: string }) {
