@@ -10,6 +10,7 @@ import ExperienceSvg from "@/public/svg/ExperienceSvg";
 import ContactSvg from "@/public/svg/ContactSvg";
 import PhotosSvg from "@/public/svg/PhotosSvg";
 import ProjectsSvg from "@/public/svg/ProjectsSvg";
+import Contact from "./Contact";
 
 export default function Header() {
     return (
@@ -39,7 +40,7 @@ export default function Header() {
                             <HeaderLink title={"Experience"} href={"/experience"} />
                             <HeaderLink title={"Projects"} href={"/projects"} />
                             <HeaderLink title={"Photography"} href={"/photography"} />
-                            <HeaderLink title={"Contact"} href={"/contact"} />
+                            <Contact />
                             <ToggleDark />
                         </div>
                     </div>
@@ -64,7 +65,7 @@ export default function Header() {
                 <HeaderLink title={"Experience"} href={"/experience"} svg={<ExperienceSvg />} />
                 <HeaderLink title={"Projects"} href={"/projects"} svg={<ProjectsSvg />} />
                 <HeaderLink title={"Photography"} href={"/photography"} svg={<PhotosSvg />} />
-                <HeaderLink title={"Contact"} href={"/contact"} svg={<ContactSvg />} />
+                <Contact svg={<ContactSvg />} />
             </div>
         </>
     );

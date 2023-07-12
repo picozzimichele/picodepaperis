@@ -5,7 +5,6 @@ import CompanySelector from "@/components/experience/CompanySelector";
 import ResumeButton from "@/components/experience/ResumeButton";
 import SkillSet from "@/components/experience/SkillSet";
 import Layout from "@/components/layout/Layout";
-import StackTagSkill from "@/components/project-card/StackTagSkill";
 import { useState, useEffect, useCallback, useMemo } from "react";
 
 export default function Experience() {
@@ -16,11 +15,11 @@ export default function Experience() {
         },
         {
             title: "Libraries & Frameworks",
-            skills: ["React", "Nextjs", "React Native", "Threejs", "Babylonjs", "Tailwind", "Colyseus"],
+            skills: ["React", "Nextjs", "React Native", "Ethers", "Threejs", "Babylonjs", "Tailwind", "Colyseus"],
         },
         {
             title: "Tools & Platforms",
-            skills: ["Hardhat", "Foundry", "Unity", "Firebase", "Atlas", "Git", "GitHub", "Vercel"],
+            skills: ["Hardhat", "Foundry", "Unity", "Firebase", "MongoDB", "Git", "GitHub", "Vercel"],
         },
     ];
     const companyList = useMemo(
@@ -30,7 +29,7 @@ export default function Experience() {
                 title: "Full Stack Web3 Developer",
                 date: "December 2021 - present | Remote",
                 responsibilities: [
-                    "Leading Front-end, Smart-Contract and Games integration team.",
+                    "Leading Front-End, Smart-Contract and Games integration team.",
                     "Built gaming website, NFT marketplace, Avatar-Builder and website for NFT mint with Typescript, React, Web3, Solidity, BabylonJS, Next.js",
                     "Smart-Contract writing, auditing and integration for website, marketplace, mint, tournaments and games.",
                     "Integrated both Unity and JavaScript based games with Smart Contracts. Helping indie dev adopting blockchain technologies and Colyseus server for multiplayer games.",
@@ -66,7 +65,7 @@ export default function Experience() {
                 title: "KYC and Verification Consultant",
                 date: "March 2018 - August 2018 | Remote",
                 responsibilities: [
-                    "Helped the company improving and streamline current KYC and Verification process, during a period of highe customer sign up and volume.",
+                    "Helped the company improving and streamline current KYC and Verification process, during a period of high customer sign up and deposit volume.",
                     "Worked with the team until new KYC division was fully operational and new team members were hired.",
                 ],
                 website: "https://www.bitfinex.com/",
@@ -122,7 +121,7 @@ export default function Experience() {
     }, [companyName, filteredCompany]);
     return (
         <Layout>
-            <div className="flex flex-col w-full items-center mx-auto max-w-3xl justify-center pt-10">
+            <div className="flex flex-col w-full items-center mx-auto max-w-3xl justify-center md:pt-20">
                 {/* Interactive Resume Section */}
                 <div className="w-full flex flex-col md:flex-row gap-5 md:gap-3">
                     {/* Clicable Companies */}
@@ -165,7 +164,7 @@ export default function Experience() {
                     <ResumeButton />
                 </div>
                 {/* Skills section */}
-                <div className="flex flex-col w-full pt-8 items-start justify-start gap-4">
+                <div className="flex flex-col w-full pt-8 md:pt-16 items-start justify-start gap-4">
                     <SkillSet title={skillSetList[0].title} skills={skillSetList[0].skills} />
                     <SkillSet title={skillSetList[1].title} skills={skillSetList[1].skills} />
                     <SkillSet title={skillSetList[2].title} skills={skillSetList[2].skills} />

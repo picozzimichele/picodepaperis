@@ -62,7 +62,7 @@ const projects = [
 export default function Projects() {
     return (
         <Layout>
-            <div className="w-full mx-auto py-5">
+            <div className="w-full mx-auto md:py-5">
                 <div className="flex flex-col w-full">
                     <p className="font-figtree text-xl font-bold dark:text-headerDark">I like to build, break and try new things</p>
                     <p className="font-figtree text-xs">Check some of my work below</p>
