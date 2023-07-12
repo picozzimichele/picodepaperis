@@ -121,9 +121,14 @@ export default function Experience() {
     }, [companyName, filteredCompany]);
     return (
         <Layout>
-            <div className="flex flex-col w-full items-center mx-auto max-w-3xl justify-center md:pt-20">
+            <div className="flex flex-col w-full items-center mx-auto max-w-3xl justify-center md:pt-5">
+                <div className="flex flex-col w-full text-sm font-figtree">
+                    <p className="dark:text-headerDark text-xl font-bold">A little about me</p>I currently enjoy working remotely within a global team.<br></br>{" "}
+                    I previously lived Tokyo for 4 years while working for Microsoft and travelled around the globe for work. <br></br> Originally from Milan,
+                    can speak Italian, English, Japanese and conversational Spanish.
+                </div>
                 {/* Interactive Resume Section */}
-                <div className="w-full flex flex-col md:flex-row gap-5 md:gap-3">
+                <div className="w-full flex flex-col md:flex-row gap-5 md:gap-3 mt-10">
                     {/* Clicable Companies */}
                     <div className="flex md:flex-col overflow-x-scroll scrollbar-hide">
                         {companyList.map((company, index) => (

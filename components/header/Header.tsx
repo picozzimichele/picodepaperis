@@ -37,8 +37,8 @@ export default function Header() {
                     {/* Desktop NavBar */}
                     <div className="hidden sm:flex items-center gap-4">
                         <div className="flex items-center gap-10">
-                            <HeaderLink title={"Experience"} href={"/experience"} />
                             <HeaderLink title={"Projects"} href={"/projects"} />
+                            <HeaderLink title={"Experience"} href={"/experience"} />
                             <HeaderLink title={"Photography"} href={"/photography"} />
                             <Contact />
                             <ToggleDark />
@@ -62,8 +62,8 @@ export default function Header() {
             </div>
             {/* Mobile Navbar */}
             <div className="sm:hidden flex items-center justify-evenly fixed bottom-0 h-16 w-full z-50 dark:bg-bgDark bg-white">
-                <HeaderLink title={"Experience"} href={"/experience"} svg={<ExperienceSvg />} />
                 <HeaderLink title={"Projects"} href={"/projects"} svg={<ProjectsSvg />} />
+                <HeaderLink title={"Experience"} href={"/experience"} svg={<ExperienceSvg />} />
                 <HeaderLink title={"Photography"} href={"/photography"} svg={<PhotosSvg />} />
                 <Contact svg={<ContactSvg />} />
             </div>
