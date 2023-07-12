@@ -22,5 +22,5 @@ module.exports = {
             figtree: ["var(--font-figtree)"],
         },
     },
-    plugins: [],
+    plugins: [require("tailwind-scrollbar-hide")],
 };

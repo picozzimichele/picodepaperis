@@ -106,11 +106,11 @@ export default function Experience() {
     }, [companyName, filteredCompany]);
     return (
         <Layout>
-            <div className="flex flex-col w-full items-center mx-auto max-w-3xl justify-center">
+            <div className="flex flex-col w-full items-center mx-auto max-w-3xl justify-center pt-10">
                 {/* Interactive Resume Section */}
-                <div className="w-full flex  gap-3">
+                <div className="w-full flex flex-col md:flex-row gap-5 md:gap-3">
                     {/* Clicable Companies */}
-                    <div className="flex flex-col">
+                    <div className="flex md:flex-col overflow-x-scroll scrollbar-hide">
                         {companyList.map((company, index) => (
                             <CompanySelector
                                 key={index}
