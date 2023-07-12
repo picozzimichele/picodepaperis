@@ -28,7 +28,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         >
             <Header />
             <div className="flex sm:w-[85%] w-[90%] mx-auto">{children}</div>
-            <div className="pb-20"></div>
+            <div className="pb-16 sm:pb-0"></div>
         </div>
     );
 }
