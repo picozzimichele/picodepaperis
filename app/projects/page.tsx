@@ -12,12 +12,12 @@ const projects = [
         gitHubLink: "https://github.com/picozzimichele/apple-scrolling-effect-react",
     },
     {
-        title: "Arcadia Survivor",
-        projectWebsite: "http://survivors-dev.outplay.games.s3-website-us-east-1.amazonaws.com/",
+        title: "Arcadians Reloaded",
+        projectWebsite: "https://arcadians.io/",
         description:
-            "Vampire Survivor inspired Unity Game with playable NFT characters. Integrated with Colyseus technology for multiplayer. Owned by Ouplay Games. Built by me and Gabriel Menezes. If AWS link still works you can play a test demo",
-        image: "/images/projects/survivors.png",
-        stack: ["Unity", "Colyseus", "C#", "Ethers", "ERC721"],
+            "Built from start to finish the website for the Arcadians Reloaded NFT mint. Mint was fully sold out through the website in June 2023. It inludes a JavaScript game and a BabylonJS avatar builder.",
+        image: "/images/projects/arcadians-io.png",
+        stack: ["Solidity", "Web3", "Ethers", "BabylonJS", "TypeScript"],
     },
     {
         title: "CoworkSurf",
@@ -28,12 +28,12 @@ const projects = [
         stack: ["Nodejs", "AWS", "NextJS", "Tailwind", "SQL"],
     },
     {
-        title: "Arcadians Reloaded",
-        projectWebsite: "https://arcadians.io/",
+        title: "Arcadia Survivor",
+        projectWebsite: "http://survivors-dev.outplay.games.s3-website-us-east-1.amazonaws.com/",
         description:
-            "Built from start to finish the website for the Arcadians Reloaded NFT mint. Mint was fully sold out through the website in June 2023. It inludes a JavaScript game and a BabylonJS avatar builder.",
-        image: "/images/projects/arcadians-io.png",
-        stack: ["Solidity", "Web3", "Ethers", "BabylonJS", "TypeScript"],
+            "Vampire Survivor inspired Unity Game with playable NFT characters. Integrated with Colyseus technology for multiplayer. Owned by Ouplay Games. Built by me and Gabriel Menezes. If AWS link still works you can play a test demo",
+        image: "/images/projects/survivors.png",
+        stack: ["Unity", "Colyseus", "C#", "Ethers", "ERC721"],
     },
     {
         title: "Avatar Builder",
