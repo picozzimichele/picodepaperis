@@ -4,58 +4,59 @@ import React from "react";
 
 const projects = [
     {
-        title: "Project 1",
-        projectWebsite: "https://www.google.com",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
-        image: "/images/imageTest.webp",
-        stack: ["React", "NextJS", "TailwindCSS"],
-        gitHubLink: "https://www.google.com",
+        title: "Apple Scroll Effect",
+        projectWebsite: "https://scrolling-effect-react.vercel.app/",
+        description: "A very simple scrolling effect made with React and Tailwind for anyone to implement. The effect is based on the Apple website.",
+        image: "/images/projects/apple-scroll.png",
+        stack: ["React", "TypeScript", "NextJS", "Tailwind", "Canva"],
+        gitHubLink: "https://github.com/picozzimichele/apple-scrolling-effect-react",
     },
     {
-        title: "Project 1",
-        projectWebsite: "https://www.google.com",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
-        image: "/images/imageTest.webp",
-        stack: ["React", "NextJS", "Tailwind", "Solidity", "Hardhat", "EthersJS"],
-        gitHubLink: "test",
+        title: "Miroir Sala da Barba",
+        projectWebsite: "https://www.miroirmilano.com/",
+        description: "From Design to build the website for one of the best barber shops in Milan. Hosted on Vercel and the domain is managed by Cloudflare.",
+        image: "/images/projects/miroir.png",
+        stack: ["React", "TypeScript", "NextJS", "Tailwind", "Cloudflare", "Figma"],
+        gitHubLink: "https://github.com/picozzimichele/miroir",
     },
     {
-        title: "Project 1",
-        projectWebsite: "https://www.google.com",
+        title: "CoworkSurf",
+        projectWebsite: "https://www.coworksurf.com/",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
-        image: "/images/imageTest.webp",
-        stack: ["React", "NextJS", "TailwindCSS"],
-        gitHubLink: "test",
+            "What can I say, I love surfing and I love coding. So I decided to build a website for remote workers who share the same passion. Still active with 40 partners, 10k+ users and 1k+ monthly visitors, generating between 20-50 bookings per month.",
+        image: "/images/projects/coworksurf.png",
+        stack: ["Nodejs", "AWS", "NextJS", "Tailwind", "SQL"],
     },
     {
-        title: "Project 1",
-        projectWebsite: "https://www.google.com",
+        title: "Arcadians Reloaded",
+        projectWebsite: "https://arcadians.io/",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
-        image: "/images/imageTest.webp",
-        stack: ["React", "NextJS", "TailwindCSS"],
-        gitHubLink: "test",
+            "Built from start to finish the website for the Arcadians Reloaded NFT mint. Mint was fully sold out through the website in June 2023. It inludes a JavaScript game and a BabylonJS avatar builder.",
+        image: "/images/projects/arcadians-io.png",
+        stack: ["Solidity", "Web3", "Ethers", "BabylonJS", "TypeScript"],
     },
     {
-        title: "Project 1",
-        projectWebsite: "https://www.google.com",
+        title: "Avatar Builder",
+        projectWebsite: "https://arcadians.io/avatarMinter",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
-        image: "/images/imageTest.webp",
-        stack: ["React", "NextJS", "TailwindCSS"],
-        gitHubLink: "test",
+            "Built with BabylonJS and React, the Avatar Builder allows users to create their own avatar and mint it on the blockchain. The minting process is handled by Web3 and the Smart Contract. Each equipment is an ERC1155 and together they create the unique ERC721.",
+        image: "/images/projects/avatar-builder.png",
+        stack: ["Solidity", "BabylonJS", "ERC1155", "ERC721", "Web3"],
     },
     {
-        title: "Project 1",
-        projectWebsite: "https://www.google.com",
+        title: "Arcadia Survivor",
+        projectWebsite: "http://survivors-dev.outplay.games.s3-website-us-east-1.amazonaws.com/",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisl eget aliquam ultrices, nunc nisl aliquet nunc, vitae aliquam nisl nunc eu nisl. Sed vitae nisl eget nisl aliquet aliquam. Sed vitae nisl eget nisl aliquet aliquam.",
-        image: "/images/imageTest.webp",
-        stack: ["React", "NextJS", "TailwindCSS"],
-        gitHubLink: "test",
+            "Vampire Survivor inspired Unity Game with playable NFT characters. Integrated with Colyseus technology for multiplayer. Owned by Ouplay Games. Built by me and Gabriel Menezes. If AWS link still works you can play a test demo",
+        image: "/images/projects/survivors.png",
+        stack: ["Unity", "Colyseus", "C#"],
+    },
+    {
+        title: "Astar PathFinding Visualizer",
+        projectWebsite: "https://pathfinder-afc48.web.app/",
+        description: "Simple visualizer for Astar alghorythm. Built this project to implement the same path laters in a Unity game.",
+        image: "/images/projects/astar.png",
+        stack: ["Unity", "Colyseus", "C#"],
     },
 ];
 
@@ -65,7 +66,12 @@ export default function Projects() {
             <div className="w-full mx-auto md:py-5">
                 <div className="flex flex-col w-full">
                     <p className="font-figtree text-xl font-bold dark:text-headerDark">I like to build, break and try new things</p>
-                    <p className="font-figtree text-xs">Check some of my work below</p>
+                    <p className="font-figtree text-xs">
+                        Check some of my work below or{" "}
+                        <a className="dark:hover:text-headerDark" target="_blank" rel="noreferrer" href="https://github.com/picozzimichele">
+                            github
+                        </a>
+                    </p>
                 </div>
                 <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
                     {projects.map((project, index) => (

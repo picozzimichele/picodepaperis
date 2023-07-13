@@ -124,8 +124,8 @@ export default function Experience() {
             <div className="flex flex-col w-full items-center mx-auto max-w-3xl justify-center md:pt-5">
                 <div className="flex flex-col w-full text-sm font-figtree">
                     <p className="dark:text-headerDark text-xl font-bold">A little about me</p>Currently enjoy working remotely within a global team.<br></br>
-                    Previously lived Tokyo for 4 years while working for Microsoft and traveled around the globe for work. <br></br> Originally from Milan, can
-                    speak Italian, English, Japanese and conversational Spanish.
+                    Previously lived in Tokyo for 4 years while working for Microsoft and traveled all over for work. <br></br> Originally from Milan, I speak
+                    Italian, English, Japanese and conversational Spanish.
                 </div>
                 {/* Interactive Resume Section */}
                 <div className="w-full flex flex-col md:flex-row gap-5 md:gap-3 mt-5 md:mt-10">
