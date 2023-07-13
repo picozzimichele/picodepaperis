@@ -33,9 +33,9 @@ export default function ProjectCard({
                 <div className="flex flex-col w-full h-full justify-between relative z-10">
                     <div className="absolute flex w-full h-full opacity-0 group-hover:opacity-100 bg-gradient-to-b from-transparent to-black transition ease-in-out delay-100 duration-[1s]"></div>
                     {/* Title and Icon */}
-                    <div className="flex w-full justify-between p-3 z-20">
-                        <p className="font-figtree dark:text-headerDark">{title}</p>
-                        <div className="bg-white rounded-full aspect-square shrink-0 h-5 flex items-center justify-center">
+                    <div className="flex w-full justify-between p-3 z-20 items-center">
+                        <p className="font-figtree bg-white rounded-full text-xs py-1 px-2 dark:text-slate-500">{title}</p>
+                        <div className="bg-white rounded-full aspect-square shrink-0 h-5 flex items-center justify-center dark:text-slate-500">
                             <Arrow45Degree />
                         </div>
                     </div>

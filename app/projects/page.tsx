@@ -52,11 +52,29 @@ const projects = [
         stack: ["Unity", "Colyseus", "C#"],
     },
     {
+        title: "Doodle Jump",
+        projectWebsite: "https://picozzimichele.itch.io/doodle-jump-picozzimichele",
+        description: "Simple Doodle Jump game made with Unity. I built this game to learn the basics of Unity and C#. Play a round and get the highest score!",
+        image: "/images/projects/doodlejump.png",
+        stack: ["Unity", "C#"],
+        gitHubLink: "https://github.com/picozzimichele/pathfinder",
+    },
+    {
         title: "Astar PathFinding Visualizer",
         projectWebsite: "https://pathfinder-afc48.web.app/",
         description: "Simple visualizer for Astar alghorythm. Built this project to implement the same path laters in a Unity game.",
         image: "/images/projects/astar.png",
-        stack: ["Unity", "Colyseus", "C#"],
+        stack: ["JavaScript", "CSS", "HTML"],
+        gitHubLink: "https://github.com/picozzimichele/doodlejump",
+    },
+    {
+        title: "Personal Website",
+        projectWebsite: "https://picozzimichele.com/",
+        description:
+            "Built my personal website with NextJS and Tailwind. I wanted to keep it simple and clean. Since you are already here, have a look around.",
+        image: "/images/projects/picozzimichele.png",
+        stack: ["TypeScript", "Tailwind", "Nextjs", "Figma"],
+        gitHubLink: "https://github.com/picozzimichele/picodepaperis",
     },
 ];
 
