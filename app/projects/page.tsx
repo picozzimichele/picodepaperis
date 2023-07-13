@@ -12,12 +12,12 @@ const projects = [
         gitHubLink: "https://github.com/picozzimichele/apple-scrolling-effect-react",
     },
     {
-        title: "Miroir Sala da Barba",
-        projectWebsite: "https://www.miroirmilano.com/",
-        description: "From Design to build the website for one of the best barber shops in Milan. Hosted on Vercel and the domain is managed by Cloudflare.",
-        image: "/images/projects/miroir.png",
-        stack: ["React", "TypeScript", "NextJS", "Tailwind", "Cloudflare", "Figma"],
-        gitHubLink: "https://github.com/picozzimichele/miroir",
+        title: "Arcadia Survivor",
+        projectWebsite: "http://survivors-dev.outplay.games.s3-website-us-east-1.amazonaws.com/",
+        description:
+            "Vampire Survivor inspired Unity Game with playable NFT characters. Integrated with Colyseus technology for multiplayer. Owned by Ouplay Games. Built by me and Gabriel Menezes. If AWS link still works you can play a test demo",
+        image: "/images/projects/survivors.png",
+        stack: ["Unity", "Colyseus", "C#", "Ethers", "ERC721"],
     },
     {
         title: "CoworkSurf",
@@ -44,12 +44,12 @@ const projects = [
         stack: ["Solidity", "BabylonJS", "ERC1155", "ERC721", "Web3"],
     },
     {
-        title: "Arcadia Survivor",
-        projectWebsite: "http://survivors-dev.outplay.games.s3-website-us-east-1.amazonaws.com/",
-        description:
-            "Vampire Survivor inspired Unity Game with playable NFT characters. Integrated with Colyseus technology for multiplayer. Owned by Ouplay Games. Built by me and Gabriel Menezes. If AWS link still works you can play a test demo",
-        image: "/images/projects/survivors.png",
-        stack: ["Unity", "Colyseus", "C#"],
+        title: "Miroir Sala da Barba",
+        projectWebsite: "https://www.miroirmilano.com/",
+        description: "From Design to build the website for one of the best barber shops in Milan. Hosted on Vercel and the domain is managed by Cloudflare.",
+        image: "/images/projects/miroir.png",
+        stack: ["React", "TypeScript", "NextJS", "Tailwind", "Cloudflare", "Figma"],
+        gitHubLink: "https://github.com/picozzimichele/miroir",
     },
     {
         title: "Doodle Jump",
@@ -60,21 +60,45 @@ const projects = [
         gitHubLink: "https://github.com/picozzimichele/pathfinder",
     },
     {
+        title: "Gaming Website",
+        projectWebsite: "https://arcadia.fun/",
+        description:
+            "Blockchain based tournament gaming website where users can create tournaments with retro games and compete between each other. Built while working at OP Games. The website is integrated with the OP Games wallet and OP Tournament Smart Contract.",
+        image: "/images/projects/arcadia-fun.png",
+        stack: ["Solidity", "TypeScript", "Nextjs", "Ethers", "Web3"],
+    },
+    {
         title: "Astar PathFinding Visualizer",
         projectWebsite: "https://pathfinder-afc48.web.app/",
-        description: "Simple visualizer for Astar alghorythm. Built this project to implement the same path laters in a Unity game.",
+        description: "Simple visualizer for Astar alghorythm. Built this project to implement the same alghorythm logic in a game.",
         image: "/images/projects/astar.png",
         stack: ["JavaScript", "CSS", "HTML"],
         gitHubLink: "https://github.com/picozzimichele/doodlejump",
     },
     {
         title: "Personal Website",
-        projectWebsite: "https://picozzimichele.com/",
+        projectWebsite: "https://picozzimichele.com/photography",
         description:
             "Built my personal website with NextJS and Tailwind. I wanted to keep it simple and clean. Since you are already here, have a look around.",
         image: "/images/projects/picozzimichele.png",
         stack: ["TypeScript", "Tailwind", "Nextjs", "Figma"],
         gitHubLink: "https://github.com/picozzimichele/picodepaperis",
+    },
+    {
+        title: "TileVania",
+        projectWebsite: "https://picozzimichele.itch.io/dungeon-vania",
+        description: "Basic 2D platformer game made with Unity. I built this game to learn the basics of Unity and C#. Play a round and run like the wind!",
+        image: "/images/projects/tilevania.png",
+        stack: ["Unity", "C#", "Pixel Art"],
+        gitHubLink: "https://github.com/picozzimichele/RedVania",
+    },
+    {
+        title: "NFT Marketplace",
+        projectWebsite: "https://marketplace.arcadia.fun/",
+        description:
+            "NFT Marketplace built while working at OP Games. The marketplace is integrated with the arcadia.fun website and the OP Games wallet. It allows users to buy and sell usable in-game items and tournament passes.",
+        image: "/images/projects/marketplace.png",
+        stack: ["Solidity", "TypeScript", "Nextjs", "Ethers", "Web3"],
     },
 ];
 
