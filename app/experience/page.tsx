@@ -15,11 +15,11 @@ export default function Experience() {
         },
         {
             title: "Libraries & Frameworks",
-            skills: ["React", "Nextjs", "React Native", "Ethers", "Threejs", "Babylonjs", "Tailwind", "Colyseus"],
+            skills: ["React", "Nextjs", "React Native", "Ethers", "Hardhat", "Foundry", "Tailwind"],
         },
         {
             title: "Tools & Platforms",
-            skills: ["Hardhat", "Foundry", "Unity", "Firebase", "MongoDB", "Git", "GitHub", "Vercel"],
+            skills: ["Unity", "Firebase", "MongoDB", "Git", "GitHub", "Vercel", "Threejs", "Babylonjs", "Colyseus"],
         },
     ];
     const companyList = useMemo(
