@@ -12,6 +12,15 @@ const projects = [
         gitHubLink: "https://github.com/picozzimichele/apple-scrolling-effect-react",
     },
     {
+        title: "Three-js with Dalle logo generator",
+        projectWebsite: "https://64b64c8db7e434432a5a367d--regal-mandazi-72a3db.netlify.app/",
+        description:
+            "Website using threejs models and OpenAI DALL-E APIs. Built with Vite and a simple nodejs server to generate the logos with API calls to OpenAI DALL-E.",
+        image: "/images/projects/shirt-threejs.png",
+        stack: ["Framer", "TypeScript", "Vite", "OpenAI", "Canva"],
+        gitHubLink: "https://github.com/picozzimichele/threejs-shirt",
+    },
+    {
         title: "Arcadians Reloaded",
         projectWebsite: "https://arcadians.io/",
         description:
@@ -99,6 +108,13 @@ const projects = [
             "NFT Marketplace built while working at OP Games. The marketplace is integrated with the arcadia.fun website and the OP Games wallet. It allows users to buy and sell usable in-game items and tournament passes.",
         image: "/images/projects/marketplace.png",
         stack: ["Solidity", "TypeScript", "Nextjs", "Ethers", "Web3"],
+    },
+    {
+        title: "Hangman Guessing Game",
+        projectWebsite: "https://hangman-mp.netlify.app/",
+        description: "Simple online hangman game, test it and try to guess the word!",
+        image: "/images/projects/hangman.png",
+        stack: ["React", "JavaScript", "Netlify"],
     },
 ];
 
