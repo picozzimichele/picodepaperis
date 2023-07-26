@@ -61,6 +61,15 @@ const projects = [
         gitHubLink: "https://github.com/picozzimichele/miroir",
     },
     {
+        title: "ETH Gifs sender",
+        projectWebsite: "https://64c0ca04288a3532ce1d8757--lively-queijadas-349fbd.netlify.app/",
+        description:
+            "Connected to the blockchain, metamask pairing, interaction with smart contracts, sending Ethereum through the blockchain network, writing solidity code, and giphy API.",
+        image: "/images/projects/eth-card.png",
+        stack: ["React", "TypeScript", "Vite", "Solidity", "Ethers"],
+        gitHubLink: "https://github.com/picozzimichele/eth-send",
+    },
+    {
         title: "Doodle Jump",
         projectWebsite: "https://picozzimichele.itch.io/doodle-jump-picozzimichele",
         description: "Simple Doodle Jump game made with Unity. I built this game to learn the basics of Unity and C#. Play a round and get the highest score!",
