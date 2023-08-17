@@ -4,9 +4,18 @@ import React from "react";
 
 const projects = [
     {
+        title: "Social App Threads",
+        projectWebsite: "https://social-app-mongo.vercel.app/",
+        description: "A Full Stack social app website built with Next.js13 MongoDB and Clerk",
+        image: "/images/projects/thread-app.png",
+        stack: ["React", "TypeScript", "NextJS", "MongoDB", "Clerk"],
+        gitHubLink: "https://github.com/picozzimichele/social-app-mongo",
+    },
+    {
         title: "Apple Scroll Effect",
         projectWebsite: "https://scrolling-effect-react.vercel.app/",
-        description: "A very simple scrolling effect made with React and Tailwind for anyone to implement. The effect is based on the Apple website.",
+        description:
+            "A very simple scrolling effect made with React and Tailwind for anyone to implement. The effect is based on the Apple website.",
         image: "/images/projects/apple-scroll.png",
         stack: ["React", "TypeScript", "NextJS", "Tailwind", "Canva"],
         gitHubLink: "https://github.com/picozzimichele/apple-scrolling-effect-react",
@@ -55,7 +64,8 @@ const projects = [
     {
         title: "Miroir Sala da Barba",
         projectWebsite: "https://www.miroirmilano.com/",
-        description: "From Design to build the website for one of the best barber shops in Milan. Hosted on Vercel and the domain is managed by Cloudflare.",
+        description:
+            "From Design to build the website for one of the best barber shops in Milan. Hosted on Vercel and the domain is managed by Cloudflare.",
         image: "/images/projects/miroir.png",
         stack: ["React", "TypeScript", "NextJS", "Tailwind", "Cloudflare", "Figma"],
         gitHubLink: "https://github.com/picozzimichele/miroir",
@@ -72,7 +82,8 @@ const projects = [
     {
         title: "Doodle Jump",
         projectWebsite: "https://picozzimichele.itch.io/doodle-jump-picozzimichele",
-        description: "Simple Doodle Jump game made with Unity. I built this game to learn the basics of Unity and C#. Play a round and get the highest score!",
+        description:
+            "Simple Doodle Jump game made with Unity. I built this game to learn the basics of Unity and C#. Play a round and get the highest score!",
         image: "/images/projects/doodlejump.png",
         stack: ["Unity", "C#"],
         gitHubLink: "https://github.com/picozzimichele/pathfinder",
@@ -88,7 +99,8 @@ const projects = [
     {
         title: "Astar PathFinding Visualizer",
         projectWebsite: "https://pathfinder-afc48.web.app/",
-        description: "Simple visualizer for Astar alghorythm. Built this project to implement the same alghorythm logic in a game.",
+        description:
+            "Simple visualizer for Astar alghorythm. Built this project to implement the same alghorythm logic in a game.",
         image: "/images/projects/astar.png",
         stack: ["JavaScript", "CSS", "HTML"],
         gitHubLink: "https://github.com/picozzimichele/doodlejump",
@@ -105,7 +117,8 @@ const projects = [
     {
         title: "TileVania",
         projectWebsite: "https://picozzimichele.itch.io/dungeon-vania",
-        description: "Basic 2D platformer game made with Unity. I built this game to learn the basics of Unity and C#. Play a round and run like the wind!",
+        description:
+            "Basic 2D platformer game made with Unity. I built this game to learn the basics of Unity and C#. Play a round and run like the wind!",
         image: "/images/projects/tilevania.png",
         stack: ["Unity", "C#", "Pixel Art"],
         gitHubLink: "https://github.com/picozzimichele/RedVania",
@@ -132,10 +145,17 @@ export default function Projects() {
         <Layout>
             <div className="w-full mx-auto md:py-5">
                 <div className="flex flex-col w-full">
-                    <p className="font-figtree text-xl font-bold dark:text-headerDark">I like to build, break and try new things</p>
+                    <p className="font-figtree text-xl font-bold dark:text-headerDark">
+                        I like to build, break and try new things
+                    </p>
                     <p className="font-figtree text-xs">
                         Check some of my work below or{" "}
-                        <a className="dark:hover:text-headerDark" target="_blank" rel="noreferrer" href="https://github.com/picozzimichele">
+                        <a
+                            className="dark:hover:text-headerDark"
+                            target="_blank"
+                            rel="noreferrer"
+                            href="https://github.com/picozzimichele"
+                        >
                             github
                         </a>
                     </p>
