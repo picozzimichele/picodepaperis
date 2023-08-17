@@ -4,21 +4,20 @@ import React from "react";
 
 const projects = [
     {
-        title: "Social App Threads",
-        projectWebsite: "https://social-app-mongo.vercel.app/",
-        description: "A Full Stack social app website built with Next.js13 MongoDB and Clerk",
-        image: "/images/projects/thread-app.png",
-        stack: ["React", "TypeScript", "NextJS", "MongoDB", "Clerk"],
-        gitHubLink: "https://github.com/picozzimichele/social-app-mongo",
+        title: "CoworkSurf",
+        projectWebsite: "https://www.coworksurf.com/",
+        description:
+            "What can I say, I love surfing and I love coding. So I decided to build a website for remote workers who share the same passion. Still active with 40 partners, 10k+ users and 1k+ monthly visitors, generating between 20-50 bookings per month.",
+        image: "/images/projects/coworksurf.png",
+        stack: ["Nodejs", "AWS", "NextJS", "Tailwind", "SQL"],
     },
     {
-        title: "Apple Scroll Effect",
-        projectWebsite: "https://scrolling-effect-react.vercel.app/",
+        title: "Arcadians Reloaded",
+        projectWebsite: "https://arcadians.io/",
         description:
-            "A very simple scrolling effect made with React and Tailwind for anyone to implement. The effect is based on the Apple website.",
-        image: "/images/projects/apple-scroll.png",
-        stack: ["React", "TypeScript", "NextJS", "Tailwind", "Canva"],
-        gitHubLink: "https://github.com/picozzimichele/apple-scrolling-effect-react",
+            "Built from start to finish the website for the Arcadians Reloaded NFT mint. Mint was fully sold out through the website in June 2023. It inludes a JavaScript game and a BabylonJS avatar builder.",
+        image: "/images/projects/arcadians-io.png",
+        stack: ["Solidity", "Web3", "Ethers", "BabylonJS", "TypeScript"],
     },
     {
         title: "Three-js with Dalle logo generator",
@@ -30,20 +29,12 @@ const projects = [
         gitHubLink: "https://github.com/picozzimichele/threejs-shirt",
     },
     {
-        title: "Arcadians Reloaded",
-        projectWebsite: "https://arcadians.io/",
-        description:
-            "Built from start to finish the website for the Arcadians Reloaded NFT mint. Mint was fully sold out through the website in June 2023. It inludes a JavaScript game and a BabylonJS avatar builder.",
-        image: "/images/projects/arcadians-io.png",
-        stack: ["Solidity", "Web3", "Ethers", "BabylonJS", "TypeScript"],
-    },
-    {
-        title: "CoworkSurf",
-        projectWebsite: "https://www.coworksurf.com/",
-        description:
-            "What can I say, I love surfing and I love coding. So I decided to build a website for remote workers who share the same passion. Still active with 40 partners, 10k+ users and 1k+ monthly visitors, generating between 20-50 bookings per month.",
-        image: "/images/projects/coworksurf.png",
-        stack: ["Nodejs", "AWS", "NextJS", "Tailwind", "SQL"],
+        title: "Social App Threads",
+        projectWebsite: "https://social-app-mongo.vercel.app/",
+        description: "A Full Stack social app website built with Next.js13 MongoDB and Clerk",
+        image: "/images/projects/thread-app.png",
+        stack: ["React", "TypeScript", "NextJS", "MongoDB", "Clerk"],
+        gitHubLink: "https://github.com/picozzimichele/social-app-mongo",
     },
     {
         title: "Arcadia Survivor",
@@ -52,6 +43,15 @@ const projects = [
             "Vampire Survivor inspired Unity Game with playable NFT characters. Integrated with Colyseus technology for multiplayer. Owned by Ouplay Games. Built by me and Gabriel Menezes. If AWS link still works you can play a test demo",
         image: "/images/projects/survivors.png",
         stack: ["Unity", "Colyseus", "C#", "Ethers", "ERC721"],
+    },
+    {
+        title: "Apple Scroll Effect",
+        projectWebsite: "https://scrolling-effect-react.vercel.app/",
+        description:
+            "A very simple scrolling effect made with React and Tailwind for anyone to implement. The effect is based on the Apple website.",
+        image: "/images/projects/apple-scroll.png",
+        stack: ["React", "TypeScript", "NextJS", "Tailwind", "Canva"],
+        gitHubLink: "https://github.com/picozzimichele/apple-scrolling-effect-react",
     },
     {
         title: "Avatar Builder",
