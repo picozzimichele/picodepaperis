@@ -29,12 +29,12 @@ const projects = [
         gitHubLink: "https://github.com/picozzimichele/threejs-shirt",
     },
     {
-        title: "Social App Threads",
-        projectWebsite: "https://social-app-mongo.vercel.app/",
-        description: "A Full Stack social app website built with Next.js13 MongoDB and Clerk",
-        image: "/images/projects/thread-app.png",
-        stack: ["React", "TypeScript", "NextJS", "MongoDB", "Clerk"],
-        gitHubLink: "https://github.com/picozzimichele/social-app-mongo",
+        title: "CryptoKet NFT Marketplace",
+        projectWebsite: "https://tanukiket-nft.vercel.app/",
+        description:
+            "Fully deployed live on the Sepolia netweork, this example marketplace allows for buying, listing and reselling NFTs across different collections. Built with Solidity, Hardhat, Ethers, Nextjs and Tailwind.",
+        image: "/images/projects/crypto-ket.png",
+        stack: ["Solidity", "Hardhat", "Ethers", "ERC721", "Nextjs"],
     },
     {
         title: "Arcadia Survivor",
@@ -69,6 +69,14 @@ const projects = [
         image: "/images/projects/miroir.png",
         stack: ["React", "TypeScript", "NextJS", "Tailwind", "Cloudflare", "Figma"],
         gitHubLink: "https://github.com/picozzimichele/miroir",
+    },
+    {
+        title: "Social App Threads",
+        projectWebsite: "https://social-app-mongo.vercel.app/",
+        description: "A Full Stack social app website built with Next.js13 MongoDB and Clerk",
+        image: "/images/projects/thread-app.png",
+        stack: ["React", "TypeScript", "NextJS", "MongoDB", "Clerk"],
+        gitHubLink: "https://github.com/picozzimichele/social-app-mongo",
     },
     {
         title: "ETH Gifs sender",
