@@ -20,6 +20,14 @@ const projects = [
         stack: ["Solidity", "Web3", "Ethers", "BabylonJS", "TypeScript"],
     },
     {
+        title: "Tanuki Travel App Companion",
+        projectWebsite: "https://tanukitravel.com/",
+        description:
+            "Follow and Share travel plans with your friends around the globe! Built with NextJS, Node.js and MongoDB. Simple App to share your travel plans. Free to use and open-source.",
+        image: "/images/projects/tanuki-travel-main.png",
+        stack: ["Node.js", "MongoDB", "Nextjs", "TypeScript"],
+    },
+    {
         title: "Three-js with Dalle logo generator",
         projectWebsite: "https://64b64c8db7e434432a5a367d--regal-mandazi-72a3db.netlify.app/",
         description:
