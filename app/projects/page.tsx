@@ -120,7 +120,7 @@ const projects = [
             "Simple Doodle Jump game made with Unity. I built this game to learn the basics of Unity and C#. Play a round and get the highest score!",
         image: "/images/projects/doodlejump.png",
         stack: ["Unity", "C#"],
-        gitHubLink: "https://github.com/picozzimichele/pathfinder",
+        gitHubLink: "https://github.com/picozzimichele/doodlejump",
     },
     {
         title: "Gaming Website",
@@ -137,7 +137,7 @@ const projects = [
             "Simple visualizer for Astar alghorythm. Built this project to implement the same alghorythm logic in a game.",
         image: "/images/projects/astar.png",
         stack: ["JavaScript", "CSS", "HTML"],
-        gitHubLink: "https://github.com/picozzimichele/doodlejump",
+        gitHubLink: "https://github.com/picozzimichele/pathfinder",
     },
     {
         title: "Personal Website",
