@@ -4,12 +4,12 @@ import React from "react";
 
 const projects = [
     {
-        title: "CoworkSurf",
-        projectWebsite: "https://www.coworksurf.com/",
+        title: "ItalianTechJobs",
+        projectWebsite: "https://www.italiantechjobs.com/",
         description:
-            "What can I say, I love surfing and I love coding. So I decided to build a website for remote workers who share the same passion. Still active with 40 partners, 10k+ users and 1k+ monthly visitors, generating between 20-50 bookings per month.",
-        image: "/images/projects/coworksurf.png",
-        stack: ["Nodejs", "AWS", "NextJS", "Tailwind", "SQL"],
+            "Italian Tech Jobs curates the best tech jobs at leading companies and startups in Italy & Europe. The leading board for tech jobs in Italy. Built this to help other fellow developers find a job in Italy.",
+        image: "/images/projects/italiantechjobs.png",
+        stack: ["Nodejs", "MongoDB", "NextJS", "Tailwind", "Auth0"],
     },
     {
         title: "Arcadians Reloaded",
@@ -20,12 +20,28 @@ const projects = [
         stack: ["Solidity", "Web3", "Ethers", "BabylonJS", "TypeScript"],
     },
     {
+        title: "CoworkSurf",
+        projectWebsite: "https://www.coworksurf.com/",
+        description:
+            "What can I say, I love surfing and I love coding. So I decided to build a website for remote workers who share the same passion. Still active with 40 partners, 10k+ users and 1k+ monthly visitors, generating between 20-50 bookings per month.",
+        image: "/images/projects/coworksurf.png",
+        stack: ["Nodejs", "AWS", "NextJS", "Tailwind", "SQL"],
+    },
+    {
         title: "Tanuki Travel App Companion",
         projectWebsite: "https://tanukitravel.com/",
         description:
             "Follow and Share travel plans with your friends around the globe! Built with NextJS, Node.js and MongoDB. Simple App to share your travel plans. Free to use and open-source.",
         image: "/images/projects/tanuki-travel-main.png",
         stack: ["Node.js", "MongoDB", "Nextjs", "TypeScript"],
+    },
+    {
+        title: "Arcadia Survivor",
+        projectWebsite: "http://survivors-dev.outplay.games.s3-website-us-east-1.amazonaws.com/",
+        description:
+            "Vampire Survivor inspired Unity Game with playable NFT characters. Integrated with Colyseus technology for multiplayer. Owned by Ouplay Games. Built by me and Gabriel Menezes. If AWS link still works you can play a test demo",
+        image: "/images/projects/survivors.png",
+        stack: ["Unity", "Colyseus", "C#", "Ethers", "ERC721"],
     },
     {
         title: "Three-js with Dalle logo generator",
@@ -37,20 +53,22 @@ const projects = [
         gitHubLink: "https://github.com/picozzimichele/threejs-shirt",
     },
     {
+        title: "e-commerce example Sneaker",
+        projectWebsite: "https://sneaker-tanuki.vercel.app/",
+        description:
+            "Sample example for an e-commerce website. Built with NextJS, Tailwind and MongoDB. The website is fully functional and ready to be deployed and used as a layout base for any e-commerce.",
+        image: "/images/projects/sneaker.png",
+        stack: ["Node.js", "MongoDB", "Nextjs", "TypeScript"],
+        gitHubLink: "https://github.com/picozzimichele/sneaker-tanuki",
+    },
+    {
         title: "CryptoKet NFT Marketplace",
         projectWebsite: "https://tanukiket-nft.vercel.app/",
         description:
             "Fully deployed live on the Sepolia netweork, this example marketplace allows for buying, listing and reselling NFTs across different collections. Built with Solidity, Hardhat, Ethers, Nextjs and Tailwind.",
         image: "/images/projects/crypto-ket.png",
         stack: ["Solidity", "Hardhat", "Ethers", "ERC721", "Nextjs"],
-    },
-    {
-        title: "Arcadia Survivor",
-        projectWebsite: "http://survivors-dev.outplay.games.s3-website-us-east-1.amazonaws.com/",
-        description:
-            "Vampire Survivor inspired Unity Game with playable NFT characters. Integrated with Colyseus technology for multiplayer. Owned by Ouplay Games. Built by me and Gabriel Menezes. If AWS link still works you can play a test demo",
-        image: "/images/projects/survivors.png",
-        stack: ["Unity", "Colyseus", "C#", "Ethers", "ERC721"],
+        gitHubLink: "https://github.com/picozzimichele/ntf-marketplace",
     },
     {
         title: "Apple Scroll Effect",
