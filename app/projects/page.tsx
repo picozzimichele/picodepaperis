@@ -4,6 +4,14 @@ import React from "react";
 
 const projects = [
     {
+        title: "Silder CSS",
+        projectWebsite: "https://www.picozzimichele.com/slider",
+        description:
+            "Fun Slider Project in 3D built only using CSS and HTML. The project can be used as a template for any website.",
+        image: "/images/projects/slider-carousel.png",
+        stack: ["CSS", "HTML", "Keyframes"],
+    },
+    {
         title: "Goat Gaming",
         projectWebsite: "https://goatgaming.com/",
         description:

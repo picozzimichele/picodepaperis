@@ -120,6 +120,17 @@ body {
         transform-style: preserve-3d;
         /*this is the length of the z axis in 3d space*/
         transform: perspective(1000px);
+        /*this animates the slider */
+        animation: autoRun 40s infinite linear;
+    }
+
+    @keyframes autoRun {
+        0% {
+            transform: perspective(1000px) rotateX(-16deg) rotateY(0deg);
+        }
+        100% {
+            transform: perspective(1000px) rotateX(-16deg) rotateY(360deg);
+        }
     }
 
     .bannerItem {
