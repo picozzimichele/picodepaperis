@@ -96,6 +96,40 @@ body {
         /*Fallback if gradeints don't work */
         background: #9b59b6;
         /*Linear gradient... */
-        background: radial-gradient(circle farthest-side at var(--x, 100px) var(--y, 100px), #3498db, #9b59b6);
+        background: radial-gradient(
+            circle farthest-side at var(--x, 100px) var(--y, 100px),
+            #3498db,
+            #9b59b6
+        );
+    }
+
+    .bannerMain {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .bannerSlider {
+        position: absolute;
+        width: 200px;
+        height: 250px;
+        top: 10%;
+        left: calc(50% - 100px);
+        transform-style: preserve-3d;
+        /*this is the length of the z axis in 3d space*/
+        transform: perspective(1000px);
+    }
+
+    .bannerItem {
+        position: absolute;
+        inset: 0 0 0 0;
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg))
+            translateZ(550px);
+    }
+
+    .rotateItem1 {
+        transform: rotateY(180deg);
     }
 }
