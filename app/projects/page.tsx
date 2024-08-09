@@ -4,6 +4,14 @@ import React from "react";
 
 const projects = [
     {
+        title: "Goat Gaming",
+        projectWebsite: "https://goatgaming.com/",
+        description:
+            "GOAT Gaming is the ultimate platform to play, compete, and win prizes, available anytime, anywhere. Built from 0 to hero in 6 months. The platform is fully functional and had 1M+ users in the first month. With MightyBearGames.",
+        image: "/images/projects/goatgaming.png",
+        stack: ["DynamoDB", "Auth0", "AWS", "TypeScript", "Ethers"],
+    },
+    {
         title: "ItalianTechJobs",
         projectWebsite: "https://www.italiantechjobs.com/",
         description:
