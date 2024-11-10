@@ -4,6 +4,14 @@ import React from "react";
 
 const projects = [
     {
+        title: "Wemote",
+        projectWebsite: "https://www.wemote.co/",
+        description:
+            "Top remote work places, anywhere in the world. Website to track coworking spaces and remote work places. Built with NextJS, Tailwind and MongoDB.",
+        image: "/images/projects/wemote.png",
+        stack: ["MongoDB", "NextJS", "Tailwind", "TypeScript", "Zod"],
+    },
+    {
         title: "Silder CSS",
         projectWebsite: "https://www.picozzimichele.com/slider",
         description:
