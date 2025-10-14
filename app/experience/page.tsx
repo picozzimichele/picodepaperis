@@ -19,15 +19,48 @@ export default function Experience() {
         },
         {
             title: "Tools & Platforms",
-            skills: ["Unity", "Firebase", "MongoDB", "Git", "GitHub", "Vercel", "Threejs", "Babylonjs", "Colyseus"],
+            skills: [
+                "Unity",
+                "Firebase",
+                "MongoDB",
+                "Git",
+                "GitHub",
+                "Vercel",
+                "Threejs",
+                "Babylonjs",
+                "Colyseus",
+            ],
         },
     ];
     const companyList = useMemo(
         () => [
             {
+                name: "Usagi ウサギ",
+                title: "Founder and Developer",
+                date: "September 2023 - Present | Remote",
+                responsibilities: [
+                    "Founded and operate a full-stack blockchain development agency, delivering end-to-end Web3 and Web2 solutions for clients.",
+                    "Build full-stack dApps and web platforms using Next.js, TypeScript, MongoDB,Firebase, and Mongoose, integrating seamlessly with blockchain backends.",
+                    "Lead client communication, requirement gathering, and project management,ensuring on-time delivery of production-ready solutions.",
+                ],
+                website: "https://www.usagibtc.com/",
+            },
+            {
+                name: "Mighty Bear Games",
+                title: "Sr. Web Developer",
+                date: "February 2024 - September 2024 | Singapore - Remote",
+                responsibilities: [
+                    "Built GoatGaming platform end-to-end in under 6 months, scaling to 1M+ users within the first month of launch.",
+                    "Designed and implemented scalable backend with AWS + DynamoDB, supporting high concurrency and rapid user growth.",
+                    "Integrated Auth0, Next.js, TypeScript, Ethers.js to deliver a production-ready end-to-end platform.",
+                    "Stack Website: React, Typescript, DynamoDB, Solidity, Next.js, Tailwind",
+                ],
+                website: "https://hub.xyz/mighty-bear-games",
+            },
+            {
                 name: "OP Games",
-                title: "Full Stack Web3 Developer",
-                date: "December 2021 - present | Remote",
+                title: "Sr. Full Stack Web3 Developer",
+                date: "December 2021 - September 2023 | Singapore - Remote",
                 responsibilities: [
                     "Leading Front-End, Smart-Contract and Games integration team.",
                     "Built gaming website, NFT marketplace, Avatar-Builder and website for NFT mint with Typescript, React, Web3, Solidity, BabylonJS, Next.js",
@@ -107,7 +140,9 @@ export default function Experience() {
 
     const filteredCompany = useCallback(
         (choosenCompany: string) => {
-            const filteredCompany = companyList.filter((company) => company.name === choosenCompany)[0];
+            const filteredCompany = companyList.filter(
+                (company) => company.name === choosenCompany
+            )[0];
             return filteredCompany;
         },
         [companyList]
@@ -123,9 +158,11 @@ export default function Experience() {
         <Layout>
             <div className="flex flex-col w-full items-center mx-auto max-w-3xl justify-center md:pt-5">
                 <div className="flex flex-col w-full text-sm font-figtree">
-                    <p className="dark:text-headerDark text-xl font-bold">A little about me</p>Currently enjoy working remotely within a global team.<br></br>
-                    Previously lived in Tokyo for 4 years while working for Microsoft and traveled all over for work. <br></br> Originally from Milan, I speak
-                    Italian, English, Japanese and conversational Spanish.
+                    <p className="dark:text-headerDark text-xl font-bold">A little about me</p>
+                    Currently enjoy working remotely within a global team.<br></br>
+                    Previously lived in Tokyo for 4 years while working for Microsoft and traveled
+                    all over for work. <br></br> Originally from Milan, I speak Italian, English,
+                    Japanese and conversational Spanish.
                 </div>
                 {/* Interactive Resume Section */}
                 <div className="w-full flex flex-col md:flex-row gap-5 md:gap-3 mt-5 md:mt-10">
@@ -144,14 +181,19 @@ export default function Experience() {
                     </div>
                     <div className="flex-1">
                         <div className="flex gap-1">
-                            <p className="font-figtree font-semibold dark:text-headerDark">{selectedCompany?.title}</p>
+                            <p className="font-figtree font-semibold dark:text-headerDark">
+                                {selectedCompany?.title}
+                            </p>
                             <a
                                 className="font-figtree font-semibold dark:text-lightGreen text-lightGreen"
                                 href={selectedCompany?.website}
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span>@</span> <span className="hover:border-b hover:border-b-lightGreen pb-1">{companyName}</span>
+                                <span>@</span>{" "}
+                                <span className="hover:border-b hover:border-b-lightGreen pb-1">
+                                    {companyName}
+                                </span>
                             </a>
                         </div>
                         <p className="text-xs mt-1">{selectedCompany?.date}</p>
