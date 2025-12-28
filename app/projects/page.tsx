@@ -4,6 +4,14 @@ import React from "react";
 
 const projects = [
     {
+        title: "Usagi BTC",
+        projectWebsite: "https://www.usagibtc.com/",
+        description:
+            "Professional-Grade Insights & Global Trends - Made Clear. Usagi BTC delivers comprehensive Bitcoin market analysis, trends, and insights for traders and enthusiasts. Stay ahead with our expert resources and data-driven reports.",
+        image: "/images/projects/usagibtc.png",
+        stack: ["MongoDB", "NextJS", "Tailwind", "TypeScript", "ShadCN"],
+    },
+    {
         title: "Wemote",
         projectWebsite: "https://www.wemote.co/",
         description:
